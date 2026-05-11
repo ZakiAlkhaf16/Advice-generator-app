@@ -36,19 +36,19 @@ body{
 
 .container{
     background-color: var(--blue-900);
-    padding: 3rem 2rem;
     border-radius: 20px;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+align-items: center;
+position: relative;
+width: 25%;
 }
 
 .advice{
     color: var(--blue-100);
-    line-height: 1.5;
-     
-    
+    line-height: 1.6;
 }
 
 .change-advice-btn{
@@ -56,7 +56,17 @@ body{
     border-radius: 50%;
     width: 3.5rem;
     height: 3.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 2rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%); /* Centers horizontally and offsets vertically */
+}
+
+.text-container{
+
+    margin-bottom: 1rem;   
+}
+.divider{
+    margin: 10px;
 }
