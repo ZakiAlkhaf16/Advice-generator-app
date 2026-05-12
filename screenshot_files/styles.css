@@ -1,0 +1,80 @@
+:root{
+--blue-100: hsl(193, 38%, 90%);
+--green-300: hsl(150, 100%, 66%);
+--blue-600: hsl(217, 19%, 38%);
+--blue-900: hsl(217, 19%, 24%);
+--blue-950: hsl(218, 23%, 16%);
+--font-size:28px;
+}
+
+.title{
+    color: var(--green-300);
+    font-weight: 100;
+    font-size: 1rem;
+    letter-spacing:5px;
+}
+
+*::after , *::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--blue-950);
+    font-size: var(--font-size);
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.container{
+    background-color: var(--blue-900);
+    border-radius: 20px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+align-items: center;
+position: relative;
+width: 25%;
+}
+
+.advice{
+    color: var(--blue-100);
+    line-height: 1.6;
+}
+
+.change-advice-btn{
+    background-color: var(--green-300);
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-top: 2rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%); /* Centers horizontally and offsets vertically */
+    cursor: pointer;    
+    transition: all 0.3s ease-in-out;   
+    border: none;
+}
+
+.change-advice-btn:hover{
+    box-shadow: 0px 0px 10px var(--green-300);
+    
+}
+
+.text-container{
+    margin-bottom: 1rem;   
+}
+.divider{
+    margin: 10px;
+}
+.divider-img{
+    width: 100%;
+}
